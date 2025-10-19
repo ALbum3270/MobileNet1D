@@ -111,13 +111,9 @@ pip install -r requirements.txt
 
 ## 🚀 Quick Start
 
-### 1. Download Pre-trained Model
+### 1. Prepare Results Directory
 
 ```bash
-# Download best model checkpoint (Coming Soon)
-# Pre-trained model will be available in releases
-# For now, please train from scratch using the training instructions below
-
 # Create results directory
 mkdir -p results/ptbxl/fixed_II/mobilenet1d/
 ```
@@ -139,16 +135,7 @@ wget -r -N -c -np --user YOUR_USERNAME --ask-password \
 python preprocess.py --dataset ptbxl --lead II
 ```
 
-### 3. Evaluate Pre-trained Model
-
-```bash
-python eval_biometric.py \
-    --config config_ptbxl.yaml \
-    --checkpoint results/ptbxl/fixed_II/mobilenet1d/best_model.pt \
-    --split test
-```
-
-### 4. Train from Scratch
+### 3. Train from Scratch
 
 ```bash
 python train.py --config config_ptbxl.yaml --device cuda
@@ -319,7 +306,7 @@ python train.py \
 ### Biometric Evaluation
 
 ```bash
-# Evaluate on test set
+# Evaluate on test set (after training)
 python eval_biometric.py \
     --config config_ptbxl.yaml \
     --checkpoint results/ptbxl/fixed_II/mobilenet1d/best_model.pt \
@@ -349,7 +336,7 @@ python eval_biometric.py \
 ### Cross-Dataset Evaluation
 
 ```bash
-# Train on PTB-XL, test on MIT-BIH
+# Train on PTB-XL, test on MIT-BIH (after training)
 python eval_biometric.py \
     --config config_ptbxl.yaml \
     --checkpoint results/ptbxl/fixed_II/mobilenet1d/best_model.pt \
