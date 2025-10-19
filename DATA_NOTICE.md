@@ -193,7 +193,7 @@ To get started with this project:
 If you have questions about data access:
 
 - **PhysioNet Support**: https://physionet.org/about/contact/
-- **Project Issues**: https://github.com/Album3270/MobileNet1D-ECG/issues
+- **Project Issues**: https://github.com/ALbum3270/MobileNet1D/issues
 - **Email**: album3270@gmail.com
 
 ---

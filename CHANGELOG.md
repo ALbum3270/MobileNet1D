@@ -136,7 +136,7 @@ pip install -r requirements.txt --upgrade
 ## Contributors
 
 - **Lead Developer**: Album (album3270@gmail.com)
-- **Contributors**: See [GitHub contributors](https://github.com/Album3270/MobileNet1D-ECG/graphs/contributors)
+- **Contributors**: See [GitHub contributors](https://github.com/ALbum3270/MobileNet1D/graphs/contributors)
 
 ---
 
