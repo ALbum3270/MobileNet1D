@@ -50,7 +50,7 @@ We pledge to make participation in our project a harassment-free experience for 
 ### 1. Reporting Bugs 🐛
 
 **Before submitting a bug report:**
-- Check existing [issues](https://github.com/yourusername/MobileNet1D-ECG/issues)
+- Check existing [issues](https://github.com/ALbum3270/MobileNet1D/issues)
 - Try to reproduce the bug with the latest version
 - Collect relevant information (OS, Python version, GPU, etc.)
 
@@ -154,11 +154,11 @@ We welcome code contributions! Here's how:
 
 ```bash
 # Fork on GitHub, then clone your fork
-git clone https://github.com/YOUR_USERNAME/MobileNet1D-ECG.git
-cd MobileNet1D-ECG
+git clone https://github.com/YOUR_USERNAME/MobileNet1D.git
+cd MobileNet1D
 
 # Add upstream remote
-git remote add upstream https://github.com/yourusername/MobileNet1D-ECG.git
+git remote add upstream https://github.com/ALbum3270/MobileNet1D.git
 ```
 
 ### 2. Create Environment

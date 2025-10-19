@@ -105,8 +105,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### From scratch
 ```bash
-git clone https://github.com/yourusername/MobileNet1D-ECG.git
-cd MobileNet1D-ECG
+git clone https://github.com/ALbum3270/MobileNet1D.git
+cd MobileNet1D
 pip install -r requirements.txt
 ```
 
