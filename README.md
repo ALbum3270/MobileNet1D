@@ -308,10 +308,22 @@ python train.py \
 ```bash
 # Evaluate on test set (after training)
 python eval_biometric.py \
-    --config config_ptbxl.yaml \
-    --checkpoint results/ptbxl/fixed_II/mobilenet1d/best_model.pt \
-    --split test \
-    --output_dir results/ptbxl/fixed_II/mobilenet1d/eval_biometric_test
+    --ckpt results/ptbxl/fixed_II/mobilenet1d/best_model.pt \
+    --split_csv data/processed/ptbxl/test.csv \
+    --data_root data/processed/ptbxl \
+    --out_dir results/ptbxl/fixed_II/mobilenet1d/eval_biometric_test
+
+# Full command with all options
+python eval_biometric.py \
+    --ckpt results/ptbxl/fixed_II/mobilenet1d/best_model.pt \
+    --split_csv data/processed/ptbxl/test.csv \
+    --data_root data/processed/ptbxl \
+    --device cuda \
+    --batch_size 64 \
+    --num_workers 4 \
+    --pairs_per_subject 40 \
+    --seed 42 \
+    --out_dir results/ptbxl/fixed_II/mobilenet1d/eval_biometric_test
 ```
 
 ### Evaluation Protocol
@@ -338,10 +350,10 @@ python eval_biometric.py \
 ```bash
 # Train on PTB-XL, test on MIT-BIH (after training)
 python eval_biometric.py \
-    --config config_ptbxl.yaml \
-    --checkpoint results/ptbxl/fixed_II/mobilenet1d/best_model.pt \
-    --test_dataset mitbih \
-    --split test
+    --ckpt results/ptbxl/fixed_II/mobilenet1d/best_model.pt \
+    --split_csv data/processed/mitbih/test.csv \
+    --data_root data/processed/mitbih \
+    --out_dir results/ptbxl/fixed_II/mobilenet1d/eval_cross_mitbih
 ```
 
 ---
