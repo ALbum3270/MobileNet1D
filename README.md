@@ -10,7 +10,7 @@ A lightweight deep learning framework for ECG-based biometric identification usi
 
 <p align="center">
   <img src="results/ptbxl/fixed_II/mobilenet1d/visualizations/test_roc_curve.png" width="45%" />
-  <img src="results/ptbxl/fixed_II/mobilenet1d/visualizations/performance_radar.png" width="45%" />
+  <img src="results/ptbxl/fixed_II/mobilenet1d/visualizations/comprehensive_metrics.png" width="45%" />
 </p>
 
 ---
