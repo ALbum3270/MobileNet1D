@@ -481,12 +481,4 @@ For questions or collaborations:
 - **GitHub Issues**: [Open an issue](https://github.com/ALbum3270/MobileNet1D/issues)
 - **Email**: album3270@gmail.com
 
----
-
-## 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=ALbum3270/MobileNet1D&type=Date)](https://star-history.com/#ALbum3270/MobileNet1D&Date)
-
----
-
 **Made with ❤️ for the ECG biometric community**

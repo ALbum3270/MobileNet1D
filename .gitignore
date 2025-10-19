@@ -53,10 +53,15 @@ mlruns/
 
 # Checkpoints
 checkpoints/
-results/*/
-!results/**/visualizations/
-!results/**/*.png
-!results/**/*.json
+
+# Results - exclude large files but keep useful ones
+results/**/*.pt
+results/**/*.pth
+results/**/*.ckpt
+results/**/*.pkl
+results/**/*.log
+results/**/*.txt
+results/**/*.jsonl
 
 # IDE
 .vscode/

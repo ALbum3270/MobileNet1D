@@ -1,0 +1,9 @@
+{
+  "model_ckpt": "/home/DATA/xiazhiqiang1/MobileNet1D/results/ecgid/fixed_I/mobilenet1d/best_model.pt",
+  "test_csv": "/home/DATA/xiazhiqiang1/MobileNet1D/data/processed/ecgid/fixed_I/test.csv",
+  "num_test_subjects": 13,
+  "num_positive_pairs": 520,
+  "num_negative_pairs": 520,
+  "auc": 0.9804585798816569,
+  "eer": 0.06346153846154001
+}
