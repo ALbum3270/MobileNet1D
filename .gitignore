@@ -45,8 +45,10 @@ data/processed/
 # Logs
 logs/
 *.log
-*.txt
 *.jsonl
+# Exclude log files but allow important txt files
+training_log*.txt
+eval_*.txt
 wandb/
 runs/
 mlruns/
@@ -60,7 +62,8 @@ results/**/*.pth
 results/**/*.ckpt
 results/**/*.pkl
 results/**/*.log
-results/**/*.txt
+results/**/training_log*.txt
+results/**/eval_*.txt
 results/**/*.jsonl
 
 # IDE
