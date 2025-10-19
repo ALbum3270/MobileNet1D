@@ -1,7 +1,7 @@
 # MobileNet-1D for ECG Biometric Identification
 
-[![GitHub Stars](https://img.shields.io/github/stars/Album3270/MobileNet1D-ECG?style=social)](https://github.com/Album3270/MobileNet1D-ECG)
-[![GitHub Forks](https://img.shields.io/github/forks/Album3270/MobileNet1D-ECG?style=social)](https://github.com/Album3270/MobileNet1D-ECG/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/ALbum3270/MobileNet1D?style=social)](https://github.com/ALbum3270/MobileNet1D)
+[![GitHub Forks](https://img.shields.io/github/forks/ALbum3270/MobileNet1D?style=social)](https://github.com/ALbum3270/MobileNet1D/fork)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 1.10+](https://img.shields.io/badge/pytorch-1.10+-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -85,8 +85,8 @@ A lightweight deep learning framework for ECG-based biometric identification usi
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/Album3270/MobileNet1D-ECG.git
-cd MobileNet1D-ECG
+git clone https://github.com/ALbum3270/MobileNet1D.git
+cd MobileNet1D
 ```
 
 ### Step 2: Create virtual environment
@@ -115,7 +115,7 @@ pip install -r requirements.txt
 
 ```bash
 # Download best model checkpoint
-wget https://github.com/Album3270/MobileNet1D-ECG/releases/download/v1.0/best_model.pt \
+wget https://github.com/ALbum3270/MobileNet1D/releases/download/v1.0/best_model.pt \
      -O results/ptbxl/fixed_II/mobilenet1d/best_model.pt
 ```
 
@@ -394,7 +394,7 @@ See `results/ptbxl/fixed_II/mobilenet1d/visualizations/README.md` for detailed e
 ## 📁 Project Structure
 
 ```
-MobileNet1D-ECG/
+MobileNet1D/
 ├── model.py                    # MobileNet-1D architecture
 ├── dataset.py                  # ECG dataset loader
 ├── train.py                    # Training script
@@ -444,7 +444,7 @@ If you use this code in your research, please cite:
   title={MobileNet-1D for ECG Biometric Identification},
   author={Album},
   year={2025},
-  url={https://github.com/Album3270/MobileNet1D-ECG},
+  url={https://github.com/ALbum3270/MobileNet1D},
   note={State-of-the-art ECG biometric identification with EER 2.08\%}
 }
 ```
@@ -478,14 +478,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or collaborations:
 
-- **GitHub Issues**: [Open an issue](https://github.com/Album3270/MobileNet1D-ECG/issues)
+- **GitHub Issues**: [Open an issue](https://github.com/ALbum3270/MobileNet1D/issues)
 - **Email**: album3270@gmail.com
 
 ---
 
 ## 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Album3270/MobileNet1D-ECG&type=Date)](https://star-history.com/#Album3270/MobileNet1D-ECG&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ALbum3270/MobileNet1D&type=Date)](https://star-history.com/#ALbum3270/MobileNet1D&Date)
 
 ---
 
