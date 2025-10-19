@@ -1,0 +1,66 @@
+# PTB-XL 数据集配置文件
+
+# 数据配置
+data:
+  dataset: ptbxl
+  data_dir: /home/DATA/xiazhiqiang1/MobileNet1D/data
+  lead: II
+  fs: 250
+  slice_method: fixed
+  window_sec: 2.0
+  stride_sec: 0.5
+
+# 预处理配置
+preprocessing:
+  lowcut: 0.5
+  highcut: 40.0
+  notch_freq: 50.0
+  apply_notch: true
+
+# R峰检测配置（用于rpeak切片方法）
+rpeak:
+  method: neurokit
+  before_peak: 0.2
+  after_peak: 0.4
+  min_rr_ms: 300
+  max_rr_ms: 2000
+  min_quality: 0.7
+
+# 数据划分配置
+split:
+  random_seed: 42
+
+# 训练配置
+training:
+  batch_size: 64
+  num_workers: 4
+  pin_memory: true
+  epochs: 100
+  early_stopping_patience: 15
+  
+  # 优化器
+  optimizer:
+    type: AdamW
+    lr: 0.001
+    weight_decay: 0.0001
+  
+  # 学习率调度
+  scheduler:
+    type: CosineAnnealingLR
+    T_max: 100
+    eta_min: 0.00001
+
+# 增强配置
+augmentation:
+  time_shift_ms: 40
+  amplitude_scale: 0.05
+  noise_snr_db: 20
+  apply_prob: 0.5
+
+# 日志与保存
+logging:
+  log_dir: ./logs
+  save_dir: ./results
+  log_interval: 10
+  val_interval: 1
+
